@@ -1,0 +1,84 @@
+Design, v1.1
+
+1. No code, check!
+
+2. Design a queue data structure using what we know about linked lists, stacks and queues
+
+    1. what functions do we need for a queue to work like the one we discussed in class?
+
+        * we will need at least 3 functions: push, peek and pop. On top of this, we might want something that accepts user commands 
+        * like a main function that runs a while loop that asks for commands.
+        * push will add code onto the top of the stack
+        * peek will look at the function at the top of the stack and return the values
+        * pop will remove an element from the stack (top of the stack)
+        * Should check if the array is full (stack overflow)
+
+    2. What values will we need to know about the structure for our queue to function properly?  
+
+        * We will need to know the height of the stack, which is the size_of the array, which will let us know where the top is.
+        * We need to know the address of the pointer at the top of the stack, from which we can get other info, like the value.
+        * we will need to be able to update the top element in the stack, whether it is adding or removing.
+        * need to make an array that actually makes up the stack. That is, a list of values or objects with which we can interact. This is our stack.
+
+3. design a list data structure that allows us to add or remove elements anywhere in the list, not just the top.
+
+    1. What functions do we need?
+
+        * push, pop, peek, menu, input verify
+        * we need the same things from before, but more specifically, we need a way to declare which index we would like to alter
+        * need to alter the array when the array is being added to or removed from. If user is adding, the array needs to shift all 
+        the values down the line. If user is removing, the element should be removed but also the array should be moved up the line.
+        * In my mind, this is an array of struct nodes, each node representing a human struct that is waiting in an literal queue.
+        I think this might defeat the purpose of the assignment if I make it have dynamic memory allocation, because then my stack is 
+        actually just the stack of my machine (I think).
+        * So my design just shifted to a fixed-size array to maintain simplicity for this assignment.
+
+    2. What values will we need to know about the structure for our list to function properly?
+
+        * need to know the top
+        * need to know the array element which will be changed and need to know the address of this element
+        * need to know the size of array (if there is any value at requested index or if the list is empty)
+        
+
+Pseudo:
+
+# inlcude libraries
+
+# include namespace
+
+// Declare some global variables
+const int STORAGE_SIZE = storage_size;
+
+
+// optional struct for human in line (post office)
+struct human{
+    string name = name;
+    int age = age;
+    int line_place = 0; // first in line
+    struct node *next;
+};
+
+void push(value){
+    if(not empty array || exceeds storage capacity){
+    update top using a pointer;
+    update the storage remaining;
+    }
+    else:
+    print("error")
+}
+
+void pop(index or value){
+    if(not empty array){
+    remove top element in array;
+    }
+    else:
+    print("error")
+}
+
+void peek(value){
+    cout << value at top index;
+}
+
+
+
+
