@@ -7,7 +7,7 @@ Design, v1.1
     1. what functions do we need for a queue to work like the one we discussed in class?
 
         * we will need at least 3 functions: push, peek and pop. On top of this, we might want something that accepts user commands 
-        * like a main function that runs a while loop that asks for commands.
+        like a main function that runs a while loop that asks for commands.
         * push will add code onto the top of the stack
         * peek will look at the function at the top of the stack and return the values
         * pop will remove an element from the stack (top of the stack)
