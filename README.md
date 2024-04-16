@@ -1,6 +1,8 @@
 # Assignment2_cs260_S24
 Assignment 2 (design)  
 
+# NOTE - All design is in the "design.txt" file
+
 
 1. Do not implement any code this week!  
 
