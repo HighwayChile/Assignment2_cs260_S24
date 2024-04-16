@@ -35,7 +35,8 @@ in the list, not just the top.
 
     1. What functions do we need?
 
-        * push, pop, peek, menu, input verify
+        * push, pop, peek, menu, input verify, function to move the remaining 
+        values after alteration.
         * we need the same things from before, but more specifically, we need a way 
         to declare which index we would like to alter
         * need to alter the array when the array is being added to or removed from. 
@@ -45,8 +46,8 @@ in the list, not just the top.
         * In my mind, this is an array of struct nodes, each node representing a 
         human struct that is waiting in an literal queue.
         I think this might defeat the purpose of the assignment if I make it have 
-        dynamic memory allocation, because then my stack is 
-        actually just the stack of my machine (I think).
+        dynamic memory allocation, because then my stack is actually just the stack 
+        of my machine (I think).
         * So my design just shifted to a fixed-size array to maintain simplicity 
         for this assignment.
 
@@ -114,5 +115,21 @@ bool is_full(var){
 }
 
 
+void move_elem_up() {
+    if(array is not full or full minus one) {
+    // This should move the remaining elements in the array after
+    // the pop function is used to REMOVE (move up like up river)
+    }
+    else:
+    print("no way, man")
+}
 
+void move_elem_down() {
+    if(array is not full or full minus one) {
+    // This should move the remaining elements in the array after
+    // the pop function is used to ADD (move down like down river)    
+    }
+    else:
+    print("no way, man")
+}
 
